@@ -10,6 +10,14 @@ set expandtab           " So tabs become spaces
 set autoindent          " Sets indent of next line equal to indent of prev line
 set smartindent         " May autoindent next line based on context
 
+set incsearch           " Shows incremental matches
+set hlsearch            " Highlights search
+
+set number              " Shows line numbers
+set relativenumber      " Shows line numbers as relative to current line
+
+set clipboard=unnamed   " Copies yy yank to OSX clipboard
+
 " Filetype specific changes
 autocmd FileType javascript setlocal tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2
@@ -22,15 +30,6 @@ autocmd FileType html setlocal shiftwidth=2
 
 autocmd FileType json setlocal tabstop=2
 autocmd FileType json setlocal shiftwidth=2
-
-set incsearch           " Shows incremental matches
-set hlsearch            " Highlights search
-
-set number              " Shows line numbers
-set relativenumber      " Shows line numbers as relative to current line
-
-set clipboard=unnamed   " Copies yy yank to OSX clipboard
-
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
