@@ -1,5 +1,4 @@
 " Makes vim behave as though .vimrc was never created
-" Recommended by vimhelp.org
 " unlet! skip_defaults_vim
 " source $VIMRUNTIME/defaults.vim
 
