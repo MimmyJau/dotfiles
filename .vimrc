@@ -8,7 +8,7 @@ set tabstop=4           " Changes size of tab to X spaces
 set shiftwidth=4        " For setting size using autoindenting or << >>
 set expandtab           " So tabs become spaces
 set autoindent          " Sets indent of next line equal to indent of prev line
-" set smartindent       " May autoindent next line based on context
+set smartindent         " May autoindent next line based on context
 
 " Filetype specific changes
 autocmd FileType javascript setlocal tabstop=2
