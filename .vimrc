@@ -2,11 +2,11 @@
 " unlet! skip_defaults_vim
 " source $VIMRUNTIME/defaults.vim
 
-syntax on		" Turns on syntax highlighting
+syntax on               " Turns on syntax highlighting
 
 set tabstop=4           " Changes size of tab to X spaces
 set shiftwidth=4        " For setting size using autoindenting or << >>
-set expandtab		    " So tabs become spaces
+set expandtab           " So tabs become spaces
 set autoindent          " Sets indent of next line equal to indent of prev line
 " set smartindent       " May autoindent next line based on context
 
@@ -27,7 +27,7 @@ set incsearch           " Shows incremental matches
 set hlsearch            " Highlights search
 
 set number              " Shows line numbers
-set relativenumber	    " Shows line numbers as relative to current line
+set relativenumber      " Shows line numbers as relative to current line
 
 set clipboard=unnamed   " Copies yy yank to OSX clipboard
 
