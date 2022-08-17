@@ -1,0 +1,11 @@
+[user]
+	name = Jimmy
+	email = jimmy.b.mau@gmail.com
+[alias]
+    lol = log --graph --oneline
+    lola = log --graph --oneline --all
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
