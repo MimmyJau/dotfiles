@@ -31,6 +31,8 @@ autocmd FileType html setlocal shiftwidth=2
 autocmd FileType json setlocal tabstop=2
 autocmd FileType json setlocal shiftwidth=2
 
+let g:vimspector_enable_mappings = 'HUMAN'
+
 " Plugins will be downloaded under the specified directory.
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
@@ -38,6 +40,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 Plug 'jalvesaq/Nvim-R'
 Plug 'whonore/Coqtail'
 Plug 'lervag/vimtex'
+Plug 'puremourning/vimspector'
 
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
