@@ -3,6 +3,7 @@
 " source $VIMRUNTIME/defaults.vim
 
 syntax on               " Turns on syntax highlighting
+set background=dark     " So vim in tmux looks the same as vim w/o tmux
 
 set tabstop=4           " Changes size of tab to X spaces
 set shiftwidth=4        " For setting size using autoindenting or << >>
