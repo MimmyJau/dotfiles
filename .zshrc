@@ -107,7 +107,7 @@ alias doroot='ssh root@159.203.19.37'
 
 # Compilers/Interpreters
 alias g++11='g++ -std=c++11'
-alias py3='python3'
+alias p3='python3'
 
 source $ZSH/oh-my-zsh.sh
 
