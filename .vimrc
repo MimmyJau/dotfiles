@@ -18,6 +18,9 @@ set ruler               " Show line and column number
 set relativenumber      " Shows line numbers as relative to current line
 
 set clipboard=unnamed   " Copies yy yank to OSX clipboard
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
 
 " Filetype specific changes
 autocmd FileType javascript setlocal tabstop=2
