@@ -9,7 +9,6 @@ set tabstop=4           " Changes size of tab to X spaces
 set shiftwidth=4        " For setting size using autoindenting or << >>
 set expandtab           " So tabs become spaces
 set autoindent          " Sets indent of next line equal to indent of prev line
-set smartindent         " May autoindent next line based on context
 
 set incsearch           " Shows incremental matches
 set hlsearch            " Highlights search
