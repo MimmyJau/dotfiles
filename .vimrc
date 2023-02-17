@@ -41,7 +41,6 @@ nmap <leader>8 <Plug>BufTabLine.Go(8)
 nmap <leader>9 <Plug>BufTabLine.Go(9)
 nmap <leader>0 <Plug>BufTabLine.Go(10)
 
- 
 " Filetype specific changes
 autocmd FileType javascript setlocal tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2
@@ -77,3 +76,19 @@ let g:ale_linters = { 'python': ['pylint'] }
 let g:ale_python_pylint_options = '--load-plugins pylint_django'
 let g:ale_fixers = { 'python': ['black'] } 
 let g:ale_fix_on_save = 1
+
+" To remap <C-]> to find definition and <C-^> to find references using Ale 
+" Source: https://github.com/dense-analysis/ale/issues/1645#issuecomment-396414319
+function ALELSPMappings()
+	let l:lsp_found=0
+	for l:linter in ale#linter#Get(&filetype) | if !empty(l:linter.lsp) | let l:lsp_found=1 | endif | endfor
+	if (l:lsp_found)
+		nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
+		nnoremap <buffer> <C-^> :ALEFindReferences<CR>
+	else
+		silent! unmap <buffer> <C-]>
+		silent! unmap <buffer> <C-^>
+	endif
+endfunction
+autocmd BufRead,FileType * call ALELSPMappings()
+ 
