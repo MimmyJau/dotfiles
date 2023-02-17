@@ -22,10 +22,25 @@ set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
 
-set hidden                  " Taken from https://github.com/ap/vim-buftabline
+" Taken from https://github.com/ap/vim-buftabline
+set hidden                  
 nnoremap <C-N> :bnext<CR>   " For jumping to next buffer
 nnoremap <C-P> :bprev<CR>   " For jumping to prev buffer
 nnoremap <C-X> :bd<CR>      " For closing buffer
+
+" Taken from :help buftabline
+let g:buftabline_numbers = 2    " Show number next to buffer tab
+nmap <leader>1 <Plug>BufTabLine.Go(1) " Type '\ [number]' to jump to buffer
+nmap <leader>2 <Plug>BufTabLine.Go(2)
+nmap <leader>3 <Plug>BufTabLine.Go(3)
+nmap <leader>4 <Plug>BufTabLine.Go(4)
+nmap <leader>5 <Plug>BufTabLine.Go(5)
+nmap <leader>6 <Plug>BufTabLine.Go(6)
+nmap <leader>7 <Plug>BufTabLine.Go(7)
+nmap <leader>8 <Plug>BufTabLine.Go(8)
+nmap <leader>9 <Plug>BufTabLine.Go(9)
+nmap <leader>0 <Plug>BufTabLine.Go(10)
+
  
 " Filetype specific changes
 autocmd FileType javascript setlocal tabstop=2
