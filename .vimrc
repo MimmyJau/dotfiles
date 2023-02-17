@@ -22,6 +22,11 @@ set foldmethod=indent
 set foldlevel=99
 nnoremap <space> za
 
+set hidden                  " Taken from https://github.com/ap/vim-buftabline
+nnoremap <C-N> :bnext<CR>   " For jumping to next buffer
+nnoremap <C-P> :bprev<CR>   " For jumping to prev buffer
+nnoremap <C-X> :bd<CR>      " For closing buffer
+ 
 " Filetype specific changes
 autocmd FileType javascript setlocal tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2
@@ -46,6 +51,9 @@ Plug 'whonore/Coqtail'
 Plug 'lervag/vimtex'
 Plug 'puremourning/vimspector'
 Plug 'dense-analysis/ale'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'ap/vim-buftabline'
 
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
