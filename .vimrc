@@ -68,6 +68,7 @@ Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ap/vim-buftabline'
+Plug 'morhetz/gruvbox'
 
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
@@ -92,3 +93,6 @@ function ALELSPMappings()
 endfunction
 autocmd BufRead,FileType * call ALELSPMappings()
  
+
+" For gruvbox
+autocmd vimenter * ++nested colorscheme gruvbox
