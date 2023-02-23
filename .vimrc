@@ -20,6 +20,7 @@ set relativenumber      " Shows line numbers as relative to current line
 set clipboard=unnamed   " Copies yy yank to OSX clipboard
 set foldmethod=indent
 set foldlevel=99
+set foldnestmax=1       " Max fold is one level
 nnoremap <space> za
 
 " Taken from https://github.com/ap/vim-buftabline
