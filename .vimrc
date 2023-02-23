@@ -70,6 +70,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ap/vim-buftabline'
 Plug 'morhetz/gruvbox'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
 
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
