@@ -72,6 +72,9 @@ Plug 'ap/vim-buftabline'
 Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
+Plug 'RRethy/vim-illuminate'
+Plug 'alvan/vim-closetag'
+Plug 'ervandew/supertab'
 
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
