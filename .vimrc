@@ -79,9 +79,9 @@ Plug 'ervandew/supertab'
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
 
-let g:ale_linters = { 'python': ['pylint'], 'javascript': ['eslint'] }
+let g:ale_linters = { 'python': ['pylint'] }
 let g:ale_python_pylint_options = '--load-plugins pylint_django'
-let g:ale_fixers = { 'python': ['black'], 'javascript': ['prettier', 'eslint'] } 
+let g:ale_fixers = { 'python': ['black'], 'javascript': ['prettier'] } 
 let g:ale_fix_on_save = 1
 
 " To remap <C-]> to find definition and <C-^> to find references using Ale 
