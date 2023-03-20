@@ -75,6 +75,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'RRethy/vim-illuminate'
 Plug 'alvan/vim-closetag'
 Plug 'ervandew/supertab'
+Plug 'github/copilot.vim'
 
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
