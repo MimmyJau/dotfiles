@@ -31,7 +31,8 @@ nnoremap <C-X> :bd<CR>      " For closing buffer
 
 " Taken from :help buftabline
 let g:buftabline_numbers = 2    " Show number next to buffer tab
-nmap <leader>1 <Plug>BufTabLine.Go(1) " Type '\ [number]' to jump to buffer
+" Type '\ [number]' to jump to buffer
+nmap <leader>1 <Plug>BufTabLine.Go(1)
 nmap <leader>2 <Plug>BufTabLine.Go(2)
 nmap <leader>3 <Plug>BufTabLine.Go(3)
 nmap <leader>4 <Plug>BufTabLine.Go(4)
