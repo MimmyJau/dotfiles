@@ -2,6 +2,10 @@
 " unlet! skip_defaults_vim
 " source $VIMRUNTIME/defaults.vim
 
+set balloonevalterm     " So that ALE can use popup balloons 
+set mouse=a             " So that mouse hover opens balloons in ALE
+set ttymouse=xterm2     " Not really sure, but needed for above to work
+
 syntax on               " Turns on syntax highlighting
 set background=dark     " So vim in tmux looks the same as vim w/o tmux
 
@@ -86,6 +90,13 @@ let g:ale_python_pylint_options = '--load-plugins pylint_django'
 let g:ale_fixers = { 'python': ['black'], 'javascript': ['prettier'] } 
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
+
+" 1) This is for showing errors on mouse hover
+let g:ale_set_balloons = 1          " Shoe ALE erros in balloons on mouse hover
+" 2) The next two are for using popupwin when cursor is on line
+" let g:ale_cursor_detail = 1         " Enable showing errors based on cursor position
+" let g:ale_floating_preview = 1      " Show ALE errors in popupwin instead of a new buffer
+
 
 " To remap <C-]> to find definition and <C-^> to find references using Ale 
 " Source: https://github.com/dense-analysis/ale/issues/1645#issuecomment-396414319
