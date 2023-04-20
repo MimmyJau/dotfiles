@@ -99,7 +99,7 @@ plugins=(git)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 # Manage Config files
-alias config='/usr/bin/git --git-dir=/Users/mimmyjau/.dotfiles/ --work-tree=/Users/mimmyjau'
+alias config='/usr/bin/git --git-dir=/Users/jimmymau/.dotfiles/ --work-tree=/Users/jimmymau'
 
 # SSH-ing into Digital Ocean Droplet
 alias domimmy='ssh mimmy@159.203.19.37'
