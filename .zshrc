@@ -123,3 +123,8 @@ export PATH="$PATH:/Users/jimmymau/Library/Python/3.11/bin"
 
 # Load keychain so I don't have to type passphrase for ssh
 ssh-add -A 2> /dev/null
+
+# Antigen zsh plugins
+source ~/antigen.zsh
+antigen bundle lukechilds/zsh-nvm
+antigen apply
