@@ -7,6 +7,7 @@ set mouse=a             " So that mouse hover opens balloons in ALE
 set ttymouse=xterm2     " Not really sure, but needed for above to work
 
 syntax on               " Turns on syntax highlighting
+set re=0                " Fixes bug for TypeScript files Source: https://github.com/prabirshrestha/vim-lsp/issues/786#issuecomment-1333947331
 set background=dark     " So vim in tmux looks the same as vim w/o tmux
 
 set tabstop=4           " Changes size of tab to X spaces
@@ -48,8 +49,13 @@ nmap <leader>9 <Plug>BufTabLine.Go(9)
 nmap <leader>0 <Plug>BufTabLine.Go(10)
 
 " Filetype specific changes
+filetype plugin indent on
+
 autocmd FileType javascript setlocal tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2
+
+autocmd FileType typescript setlocal tabstop=2
+autocmd FileType typescript setlocal shiftwidth=2
 
 autocmd FileType css setlocal tabstop=2
 autocmd FileType css setlocal shiftwidth=2
