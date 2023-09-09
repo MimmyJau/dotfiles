@@ -128,3 +128,5 @@ ssh-add -A 2> /dev/null
 source ~/antigen.zsh
 antigen bundle lukechilds/zsh-nvm
 antigen apply
+
+[ -f "/Users/jimmymau/.ghcup/env" ] && source "/Users/jimmymau/.ghcup/env" # ghcup-env
