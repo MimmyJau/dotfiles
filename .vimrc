@@ -10,8 +10,8 @@ syntax on               " Turns on syntax highlighting
 set re=0                " Fixes bug for TypeScript files Source: https://github.com/prabirshrestha/vim-lsp/issues/786#issuecomment-1333947331
 set background=dark     " So vim in tmux looks the same as vim w/o tmux
 
-set tabstop=4           " Changes size of tab to X spaces
-set shiftwidth=4        " For setting size using autoindenting or << >>
+set tabstop=2           " Changes size of tab to X spaces
+set shiftwidth=2        " For setting size using autoindenting or << >>
 set expandtab           " So tabs become spaces
 set autoindent          " Sets indent of next line equal to indent of prev line
 
@@ -66,6 +66,9 @@ autocmd FileType html setlocal shiftwidth=2
 autocmd FileType json setlocal tabstop=2
 autocmd FileType json setlocal shiftwidth=2
 
+autocmd FileType solidity setlocal tabstop=4
+autocmd FileType solidity setlocal shiftwidth=4
+
 let g:vimspector_enable_mappings = 'HUMAN'
 
 " Plugins will be downloaded under the specified directory.
@@ -91,7 +94,7 @@ Plug 'github/copilot.vim'
 " List ends here. Plugins become visible to Vim after this call
 call plug#end()
 
-let g:ale_linters = { 'python': ['pylint', 'pyright'], 'javascript': ['eslint', 'tsserver'], 'typescript': ['eslint', 'tsserver'] }
+let g:ale_linters = { 'python': ['pylint', 'pyright'], 'javascript': ['eslint', 'tsserver'], 'typescript': ['eslint', 'tsserver'], 'typescriptreact': ['tsserver'] }
 let g:ale_python_pylint_options = '--load-plugins pylint_django'
 let g:ale_fixers = { 'python': ['black'], 'javascript': ['prettier'], 'typescript': ['prettier'] } 
 let g:ale_fix_on_save = 1

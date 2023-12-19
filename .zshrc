@@ -130,3 +130,10 @@ antigen bundle lukechilds/zsh-nvm
 antigen apply
 
 [ -f "/Users/jimmymau/.ghcup/env" ] && source "/Users/jimmymau/.ghcup/env" # ghcup-env
+
+# bun completions
+[ -s "/Users/jimmymau/.bun/_bun" ] && source "/Users/jimmymau/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
