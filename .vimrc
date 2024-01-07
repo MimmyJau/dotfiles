@@ -14,6 +14,7 @@ set tabstop=2           " Changes size of tab to X spaces
 set shiftwidth=2        " For setting size using autoindenting or << >>
 set expandtab           " So tabs become spaces
 set autoindent          " Sets indent of next line equal to indent of prev line
+set smartindent
 
 set incsearch           " Shows incremental matches
 set hlsearch            " Highlights search
@@ -96,7 +97,7 @@ call plug#end()
 
 let g:ale_linters = { 'python': ['pylint', 'pyright'], 'javascript': ['eslint', 'tsserver'], 'typescript': ['eslint', 'tsserver'], 'typescriptreact': ['tsserver'] }
 let g:ale_python_pylint_options = '--load-plugins pylint_django'
-let g:ale_fixers = { 'python': ['black'], 'javascript': ['prettier'], 'typescript': ['prettier'] } 
+let g:ale_fixers = { 'python': ['black'], 'javascript': ['prettier'], 'typescript': ['prettier'], 'typescriptreact': ['prettier'] } 
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 

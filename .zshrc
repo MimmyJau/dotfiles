@@ -140,4 +140,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # NODE js path, required for copilot
 export NODE_PATH=$NODE_PATH:`npm root -g`
-#
